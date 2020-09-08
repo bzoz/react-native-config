@@ -32,6 +32,10 @@
   "license": "MIT",
   "devDependencies": {
     "@semantic-release/git": "^9.0.0",
+    "react-native": "0.63",
     "semantic-release": "^17.0.4"
+  },
+  "peerDependencies": {
+    "react-native-windows": "0.63"
   }
 }
