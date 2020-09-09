@@ -3,8 +3,13 @@ const path = require('path')
 const readline = require('readline')
 
 const envFile = path.join(process.argv[2], '..', process.env['ENVFILE'] || '.env')
-const outDir = process.argv[3]
+const outDir = path.join(process.argv[3], 'Generated Files')
+
 console.log(`Generating files in ${outDir} from ${envFile} env file`)
+
+if (!fs.existsSync(outDir)) {
+  fs.mkdirSync(outDir)
+}
 
 if (fs.existsSync(envFile)) {
   const vars = []
