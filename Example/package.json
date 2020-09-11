@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
+    "appium": "appium",
     "ios": "react-native run-ios",
     "windows": "react-native run-windows",
     "start": "react-native start",
     "test": "jest",
+    "test:windows": "yarn jest --setupFiles=./jest-setups/jest.setup.windows.js",
     "lint": "eslint .",
     "postinstall": "node ../scripts/examples_postinstall.js"
   },
