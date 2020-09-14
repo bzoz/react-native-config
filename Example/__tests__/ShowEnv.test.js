@@ -2,7 +2,7 @@ import { driver, By2 } from 'selenium-appium'
 import { until } from 'selenium-webdriver';
 
 const setup = require('../jest-setups/jest.setup');
-jest.setTimeout(10000);
+jest.setTimeout(60000);
 
 beforeAll(() => {
   return driver.startWithCapabilities(setup.capabilites);
