@@ -9,6 +9,7 @@
     "react-native",
     "android",
     "ios",
+    "windows",
     "12factor"
   ],
   "homepage": "https://github.com/luggit/react-native-config",
@@ -24,6 +25,7 @@
   "files": [
     "android/",
     "ios/",
+    "windows/",
     "index.js",
     "index.d.ts",
     "react-native-config.podspec"
